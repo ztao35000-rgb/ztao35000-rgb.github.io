@@ -1,0 +1,52 @@
+<meta charset="UTF-8">
+<div style="margin: 10px 0;">
+    <a href="mods.html" style="text-decoration: none;">
+        <button style="background-color: #e0e0e0; color: #333; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; font-weight: bold;">
+            ← Back to List
+        </button>
+    </a>
+</div>
+
+<section class="mod-detail" style="font-family: sans-serif; color: #333; line-height: 1.5;">
+    <h2 style="color: #222;">Baby Player Settings Guide</h2>
+    <p>When players grow up too quickly, or when we don't want them to grow up, you can adjust these settings in the config file.</p>
+
+    <div class="config-highlight" style="background-color: #f4f4f4; border-left: 5px solid #ff6600; padding: 15px; border-radius: 5px; margin-bottom: 20px;">
+        <p><strong>💡 Quick Tips:</strong></p>
+        <code>babyAge = -4000</code> <span style="color: #666;">// If you want faster growth.</span><br>
+        <code>babyAge = -2147483647</code> <span style="color: #666;">// If you don't want them to grow up. (Forever Baby)</span>
+    </div>
+
+    <h3 style="color: #444;">Full Configuration File (.toml)</h3>
+    <div class="config-full-box" style="background-color: #2b2b2b; color: #f8f8f2; padding: 20px; border-radius: 8px; font-family: 'Courier New', Courier, monospace; overflow-x: auto; line-height: 1.6;">
+        <pre style="margin: 0;">
+<span style="color: #ae81ff;">[babyplayers_common]</span>
+  <span style="color: #75715e;"># The default age for a baby player. Set to 0 to disable baby players.</span>
+  <span style="color: #a6e22e;">babyAge</span> = <span style="color: #ae81ff;">-2147483647</span>
+
+  <span style="color: #75715e;"># Allows baby players to grow up to adults.</span>
+  <span style="color: #a6e22e;">doAging</span> = <span style="color: #ae81ff;">true</span>
+
+  <span style="color: #75715e;"># Determines if players respawn as a baby.</span>
+  <span style="color: #a6e22e;">respawnAsBaby</span> = <span style="color: #ae81ff;">true</span>
+
+  <span style="color: #75715e;"># Determines if baby players can break blocks. 
+  # Blocks that break instantly do not count.</span>
+  <span style="color: #a6e22e;">babiesBreakBlocks</span> = <span style="color: #ae81ff;">true</span>
+
+  <span style="color: #75715e;"># Determines if baby players deal 4 times less damage.</span>
+  <span style="color: #a6e22e;">babiesDealLessDamage</span> = <span style="color: #ae81ff;">true</span>
+
+  <span style="color: #75715e;"># If set to true, babies can't use ranged weapons like Bows, etc.</span>
+  <span style="color: #a6e22e;">babiesCantUseBows</span> = <span style="color: #ae81ff;">true</span>
+        </pre>
+    </div>
+</section>
+
+<div style="margin-top: 30px; margin-bottom: 30px; text-align: center;">
+    <a href="mods.html" style="text-decoration: none;">
+        <button style="background-color: #e0e0e0; color: #333; width: 95%; max-width: 500px; padding: 15px; border: none; border-radius: 8px; cursor: pointer; font-size: 16px; font-weight: bold;">
+            ← Back to Mods Gallery
+        </button>
+    </a>
+</div>

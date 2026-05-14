@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <title>Minecraft Color Codes Table</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f0f0;
+            display: flex;
+            flex-direction: column; /* ปรับให้รองรับปุ่มด้านล่าง */
+            align-items: center;
+            padding: 20px;
+            margin: 0;
+        }
+
+        .container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            max-width: 800px;
+            width: 100%;
+            margin-bottom: 20px; /* เว้นระยะห่างจากปุ่ม */
+        }
+
+        h2 { margin-top: 0; color: #333; }
+        p { color: #666; font-size: 14px; }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            font-size: 15px;
+        }
+
+        th {
+            background-color: #555555;
+            color: white;
+            padding: 12px;
+            text-align: left;
+            border: 1px solid #444;
+        }
+
+        td {
+            padding: 10px 15px;
+            border: 1px solid rgba(0,0,0,0.05);
+        }
+
+        /* --- ปุ่มกลับหน้าหลัก --- */
+        .btn-back {
+            display: inline-block;
+            background-color: #333;
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background 0.3s;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+
+        .btn-back:hover {
+            background-color: #555;
+        }
+
+        /* ตกแต่งสีแต่ละแถวตาม Minecraft */
+        .dark_red { background-color: #AA0000; color: white; }
+        .red { background-color: #FF5555; color: white; }
+        .gold { background-color: #FFAA00; color: black; }
+        .yellow { background-color: #FFFF55; color: black; }
+        .dark_green { background-color: #00AA00; color: white; }
+        .green { background-color: #55FF55; color: black; }
+        .aqua { background-color: #55FFFF; color: black; }
+        .dark_aqua { background-color: #00AAAA; color: white; }
+        .dark_blue { background-color: #0000AA; color: white; }
+        .blue { background-color: #5555FF; color: white; }
+        .light_purple { background-color: #FF55FF; color: black; }
+        .dark_purple { background-color: #AA00AA; color: white; }
+        .white { background-color: #FFFFFF; color: black; }
+        .gray { background-color: #AAAAAA; color: black; }
+        .dark_gray { background-color: #555555; color: white; }
+        .black { background-color: #000000; color: white; }
+
+        .color-name { font-weight: bold; }
+        .minecraft-name { font-style: italic; font-size: 13px; display: block; opacity: 0.8; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>List of Color Codes</h2>
+    <p>Here is a list of color codes that are available in Minecraft:</p>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Color (Minecraft Name)</th>
+                <th>Chat Code</th>
+                <th>MOTD Code</th>
+                <th>Decimal</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="dark_red">
+                <td><span class="color-name">Dark Red</span><span class="minecraft-name">(dark_red)</span></td>
+                <td>§4</td>
+                <td>\u00A74</td>
+                <td>11141120</td>
+            </tr>
+            <tr class="red">
+                <td><span class="color-name">Red</span><span class="minecraft-name">(red)</span></td>
+                <td>§c</td>
+                <td>\u00A7c</td>
+                <td>16733525</td>
+            </tr>
+            <tr class="gold">
+                <td><span class="color-name">Gold</span><span class="minecraft-name">(gold)</span></td>
+                <td>§6</td>
+                <td>\u00A76</td>
+                <td>16755200</td>
+            </tr>
+            <tr class="yellow">
+                <td><span class="color-name">Yellow</span><span class="minecraft-name">(yellow)</span></td>
+                <td>§e</td>
+                <td>\u00A7e</td>
+                <td>16777045</td>
+            </tr>
+            <tr class="dark_green">
+                <td><span class="color-name">Dark Green</span><span class="minecraft-name">(dark_green)</span></td>
+                <td>§2</td>
+                <td>\u00A72</td>
+                <td>43520</td>
+            </tr>
+            <tr class="green">
+                <td><span class="color-name">Green</span><span class="minecraft-name">(green)</span></td>
+                <td>§a</td>
+                <td>\u00A7a</td>
+                <td>5635925</td>
+            </tr>
+            <tr class="aqua">
+                <td><span class="color-name">Aqua</span><span class="minecraft-name">(aqua)</span></td>
+                <td>§b</td>
+                <td>\u00A7b</td>
+                <td>5636095</td>
+            </tr>
+            <tr class="dark_aqua">
+                <td><span class="color-name">Dark Aqua</span><span class="minecraft-name">(dark_aqua)</span></td>
+                <td>§3</td>
+                <td>\u00A73</td>
+                <td>43690</td>
+            </tr>
+            <tr class="dark_blue">
+                <td><span class="color-name">Dark Blue</span><span class="minecraft-name">(dark_blue)</span></td>
+                <td>§1</td>
+                <td>\u00A71</td>
+                <td>170</td>
+            </tr>
+            <tr class="blue">
+                <td><span class="color-name">Blue</span><span class="minecraft-name">(blue)</span></td>
+                <td>§9</td>
+                <td>\u00A79</td>
+                <td>5592575</td>
+            </tr>
+            <tr class="light_purple">
+                <td><span class="color-name">Light Purple</span><span class="minecraft-name">(light_purple)</span></td>
+                <td>§d</td>
+                <td>\u00A7d</td>
+                <td>16733695</td>
+            </tr>
+            <tr class="dark_purple">
+                <td><span class="color-name">Dark Purple</span><span class="minecraft-name">(dark_purple)</span></td>
+                <td>§5</td>
+                <td>\u00A75</td>
+                <td>11141290</td>
+            </tr>
+            <tr class="white">
+                <td><span class="color-name">White</span><span class="minecraft-name">(white)</span></td>
+                <td>§f</td>
+                <td>\u00A7f</td>
+                <td>16777215</td>
+            </tr>
+            <tr class="gray">
+                <td><span class="color-name">Gray</span><span class="minecraft-name">(gray)</span></td>
+                <td>§7</td>
+                <td>\u00A77</td>
+                <td>11184810</td>
+            </tr>
+            <tr class="dark_gray">
+                <td><span class="color-name">Dark Gray</span><span class="minecraft-name">(dark_gray)</span></td>
+                <td>§8</td>
+                <td>\u00A78</td>
+                <td>5592405</td>
+            </tr>
+            <tr class="black">
+                <td><span class="color-name">Black</span><span class="minecraft-name">(black)</span></td>
+                <td>§0</td>
+                <td>\u00A70</td>
+                <td>0</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<a href="index.html" class="btn-back">← Back to Home</a>
+
+</body>
+</html>

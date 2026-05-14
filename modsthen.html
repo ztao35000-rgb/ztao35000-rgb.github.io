@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Redirecting...</title>
+    
+    <script>
+        function checkAndRedirect() {
+            // เช็คภาษาเครื่อง (ไทย = th)
+            const isThaiLang = navigator.language.toLowerCase().includes('th');
+            // เช็คโซนเวลา (ไทย = Asia/Bangkok)
+            const isThaiTime = Intl.DateTimeFormat().resolvedOptions().timeZone === 'Asia/Bangkok';
+
+            if (isThaiLang || isThaiTime) {
+                // ถ้าเป็นคนไทย ส่งไปหน้าภาษาไทย
+                window.location.href = 'modsthaibetatest.html';
+            } else {
+                // ถ้าไม่ใช่คนไทย ส่งไปหน้าสากล (ภาษาอังกฤษ)
+                window.location.href = 'mods.html';
+            }
+        }
+        
+        // สั่งให้ทำงานทันทีที่เปิดหน้า
+        checkAndRedirect();
+    </script>
+</head>
+<body style="background:#f4f4f4; display:flex; justify-content:center; align-items:center; height:100vh; font-family:sans-serif;">
+    <p>Loading... / กำลังนำคุณไปสู่หน้าเว็บ...</p>
+</body>
+</html>

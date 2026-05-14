@@ -1,0 +1,52 @@
+<meta charset="UTF-8">
+<div style="margin: 10px 0;">
+    <a href="modsthaibetatest.html" style="text-decoration: none;">
+        <button style="background-color: #e0e0e0; color: #333; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; font-weight: bold;">
+            ← ย้อนกลับไปหน้ารายการ
+        </button>
+    </a>
+</div>
+
+<section class="mod-detail" style="font-family: sans-serif; color: #333; line-height: 1.5;">
+    <h2 style="color: #222;">คู่มือการตั้งค่ามอด Baby Player (Config)</h2>
+    <p>เมื่อผู้เล่นโตเร็วเกินไป หรือเราต้องการให้พวกเขาเป็นเด็กตลอดไป คุณสามารถปรับแต่งค่าเหล่านี้ได้ในไฟล์ Config ครับ</p>
+
+    <div class="config-highlight" style="background-color: #f4f4f4; border-left: 5px solid #ff6600; padding: 15px; border-radius: 5px; margin-bottom: 20px;">
+        <p><strong>💡 เทคนิคด่วน (Quick Tips):</strong></p>
+        <code>babyAge = -4000</code> <span style="color: #666;">// ถ้าต้องการให้โตไวขึ้น ให้ปรับค่าให้น้อยลง</span><br>
+        <code>babyAge = -2147483647</code> <span style="color: #666;">// ถ้าต้องการให้เป็นเด็กตลอดไป (ไม่โตเลย)</span>
+    </div>
+
+    <h3 style="color: #444;">ไฟล์ตั้งค่าฉบับเต็ม (.toml)</h3>
+    <div class="config-full-box" style="background-color: #2b2b2b; color: #f8f8f2; padding: 20px; border-radius: 8px; font-family: 'Courier New', Courier, monospace; overflow-x: auto; line-height: 1.6;">
+        <pre style="margin: 0;">
+<span style="color: #ae81ff;">[babyplayers_common]</span>
+  <span style="color: #75715e;"># อายุเริ่มต้นของตัวละครเด็ก (ตั้งเป็น 0 เพื่อปิดระบบตัวเล็ก)</span>
+  <span style="color: #a6e22e;">babyAge</span> = <span style="color: #ae81ff;">-2147483647</span>
+
+  <span style="color: #75715e;"># อนุญาตให้เด็กเติบโตเป็นผู้ใหญ่ได้ (true = เปิด / false = ปิด)</span>
+  <span style="color: #a6e22e;">doAging</span> = <span style="color: #ae81ff;">true</span>
+
+  <span style="color: #75715e;"># กำหนดให้ผู้เล่นเกิดใหม่ในร่างเด็กเสมอ</span>
+  <span style="color: #a6e22e;">respawnAsBaby</span> = <span style="color: #ae81ff;">true</span>
+
+  <span style="color: #75715e;"># กำหนดให้ร่างเด็กสามารถขุดบล็อกได้ 
+  # (บล็อกที่แตกทันที เช่น หญ้า จะไม่มีผลจากค่านี้)</span>
+  <span style="color: #a6e22e;">babiesBreakBlocks</span> = <span style="color: #ae81ff;">true</span>
+
+  <span style="color: #75715e;"># กำหนดให้ร่างเด็กสร้างความเสียหาย (โจมตี) เบากว่าผู้ใหญ่ 4 เท่า</span>
+  <span style="color: #a6e22e;">babiesDealLessDamage</span> = <span style="color: #ae81ff;">true</span>
+
+  <span style="color: #75715e;"># ถ้าตั้งเป็น true เด็กจะไม่สามารถใช้อาวุธระยะไกลได้ (ธนู, หน้าไม้)</span>
+  <span style="color: #a6e22e;">babiesCantUseBows</span> = <span style="color: #ae81ff;">true</span>
+        </pre>
+    </div>
+</section>
+
+<div style="margin-top: 30px; margin-bottom: 30px; text-align: center;">
+    <a href="modsthaibetatest.html" style="text-decoration: none;">
+        <button style="background-color: #e0e0e0; color: #333; width: 95%; max-width: 500px; padding: 15px; border: none; border-radius: 8px; cursor: pointer; font-size: 16px; font-weight: bold;">
+            ← กลับสู่หน้าหลักมอดภาษาไทย
+        </button>
+    </a>
+</div>

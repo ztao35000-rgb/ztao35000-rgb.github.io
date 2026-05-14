@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google" content="notranslate">
+    <title>Mods Preview</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            padding: 15px;
+            padding-top: 60px; /* Space for language bar */
+            background-color: #f4f4f4;
+            margin: 0;
+        }
+
+        /* --- Language Switcher Bar --- */
+        .lang-bar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgba(255, 255, 255, 0.9);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            z-index: 1000;
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+            gap: 10px;
+        }
+
+        .lang-btn {
+            text-decoration: none;
+            font-size: 13px;
+            font-weight: bold;
+            padding: 5px 15px;
+            border-radius: 20px;
+            border: 1px solid #ddd;
+            color: #666;
+            transition: 0.3s;
+        }
+        
+        .btn-mcpedl {
+    background-color: #3b3b3b; /* สีเทาเข้มแบบ MCPEDL */
+    color: white;
+        }
+
+
+        .lang-btn.active {
+            background-color: #333;
+            color: #fff;
+            border-color: #333;
+        }
+
+        .lang-btn:hover:not(.active) {
+            background-color: #eee;
+        }
+
+        /* --- Mod Cards Structure --- */
+        .mod-card {
+            background: white;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            max-width: 500px;
+            margin: 0 auto 30px auto; 
+        }
+
+        .header-row {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        .header-row img {
+            width: 60px;
+            height: 60px;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+
+        .app-title {
+            margin: 0;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .submit-date {
+            font-size: 12px;
+            color: #666;
+            margin-top: 5px;
+        }
+
+        .video-container {
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%; 
+            height: 0;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            overflow: hidden;
+            background: #000;
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        .btn-group {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-bottom: 10px;
+        }
+
+        .btn {
+            display: block;
+            text-align: center;
+            padding: 12px;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        .btn-curseforge {
+            background-color: #f16436; 
+            color: white;
+        }
+
+        .btn-modrinth {
+            background-color: #1bd96a; 
+            color: #000;
+        }
+
+        .btn-back {
+            background-color: #e0e0e0;
+            color: #333;
+            margin-top: 10px;
+        }
+
+        @media (max-height: 500px) {
+            .mod-card { max-width: 90%; }
+            .header-row img { width: 40px; height: 40px; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="lang-bar">
+        <a href="modsthaibetatestpe.html" class="lang-btn">🇹🇭 ภาษาไทย</a>
+        <a href="modspe.html" class="lang-btn active">🇺🇸 English</a>
+    </div>
+
+    <div class="mod-card">
+        <div class="header-row">
+            <img src="images/what.png" alt="Mod Logo: The Timeless Prison" onerror="this.src='https://media.forgecdn.net/avatars/597/655/637691515282035222.png'">
+            <div>
+                <h1 class="app-title" translate="no">Shader Mod</h1>
+                                <div class="submit-date">Light and shadow</div>
+            </div>
+        </div>
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/AQrZim7OeaQ" title="YouTube video player" allowfullscreen></iframe>
+        </div>
+        <div class="btn-group">
+            <a href="https://www.mediafire.com/file/n9vj3hfse6vkv9l/libmaterialbinloader2.so/file?dkey=xww2zfpkk0j&r=1101" class="btn btn-curseforge">
+                [ View on mediafire Minecraft PE edition for LeviLauncher ]
+            </a>
+                                    <a href="https://drive.google.com/file/d/1DS736oc06sDdHEpQlqoaU4mXsSocZ8Et/view?usp=sharing" class="btn btn-curseforge">
+                [ View on Google Drive Minecraft PE edition for LeviLauncher ]
+            </a>
+                        <a href="modspetutorial.html" class="btn btn-curseforge">
+                [ View on tutorial ]
+            </a>
+        </div>
+        
+    </div>
+
+    <div class="mod-card">
+        <div class="header-row">
+            <img src="images/what.png" alt="Mod Logo: Orbital Railgun Reforged" onerror="this.src='https://media.forgecdn.net/avatars/611/846/637955519391039328.png'">
+            <div>
+                <h1 class="app-title" translate="no">Skin Pack 3D & 4D Mod</h1>
+                <div class="submit-date">Skin for support 256x256 512x512 Model</div>
+            </div>
+        </div>
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/vSiKASd5l-o" title="YouTube video player" allowfullscreen></iframe>
+        </div>
+        <div class="btn-group">
+            <a href="https://www.mediafire.com/file/yp7y5n6vydquim6/lib4dskin.so/file?dkey=67x15jbprfb&r=603" class="btn btn-curseforge">
+                [ View on mediafire Minecraft PE edition for LeviLauncher ]
+            </a>
+                        <a href="https://drive.google.com/file/d/1slAPuN5HGu3Kh4109tQ9dp8cGDLbCc_a/view?usp=sharing" class="btn btn-curseforge">
+                [ View on Google Drive Minecraft PE edition for LeviLauncher ]
+            </a>
+                                    <a href="modspetutorial.html" class="btn btn-curseforge">
+                [ View on tutorial ]
+            </a>
+        </div>
+    </div>
+        <div class="mod-card">
+        <div class="header-row">
+            <img src="images/what.png" alt="Mod Logo: Orbital Railgun Reforged" onerror="this.src='https://media.forgecdn.net/avatars/611/846/637955519391039328.png'">
+            <div>
+                <h1 class="app-title" translate="no">Bedrock Tools Mod</h1>
+                <div class="submit-date">Additional prayers</div>
+            </div>
+        </div>
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/WNZ9I8254FM" title="YouTube video player" allowfullscreen></iframe>
+        </div>
+        <div class="btn-group">
+            <a href="https://www.mediafire.com/file/ygx3wlbq8xj86jx/libBedrockTools-levi.so/file?dkey=7entm21ebir&r=875" class="btn btn-curseforge">
+                [ View on mediafire Minecraft PE edition for LeviLauncher ]
+            </a>
+                                    <a href="https://drive.google.com/file/d/1CeqC9gLio3jD6OTiiIpOZGxBB8XAIngO/view?usp=sharing" class="btn btn-curseforge">
+                [ View on Google Drive Minecraft PE edition for LeviLauncher ]
+            </a>
+            
+                                    <a href="modspetutorial.html" class="btn btn-curseforge">
+                [ View on tutorial ]
+            </a>
+        </div>
+    </div>
+            <div class="mod-card">
+        <div class="header-row">
+            <img src="images/what.png" alt="Mod Logo: Orbital Railgun Reforged" onerror="this.src='https://media.forgecdn.net/avatars/611/846/637955519391039328.png'">
+            <div>
+                <h1 class="app-title" translate="no">GUI Old Mod</h1>
+                <div class="submit-date">Old UI Back Minecraft </div>
+            </div>
+        </div>
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/sbAbb62JDbE" title="YouTube video player" allowfullscreen></iframe>
+        </div>
+        <div class="btn-group">
+            <a href="https://www.mediafire.com/file/6cl652bvbh5zjqq/libForceCloseOreUI.so/file?dkey=dk0xl5zfpae&r=1472" class="btn btn-curseforge">
+                [ View on mediafire Minecraft PE edition for LeviLauncher ]
+            </a>
+                                    <a href="https://drive.google.com/file/d/1Rjmu0lY7ANvze5m1shTBj7HPNZLFHDkL/view?usp=sharing" class="btn btn-curseforge">
+                [ View on Google Drive Minecraft PE edition for LeviLauncher ]
+            </a>
+                                    <a href="modspetutorial.html" class="btn btn-curseforge">
+                [ View on tutorial ]
+            </a>
+        </div>
+    </div>
+    
+
+
+    <div style="max-width: 500px; margin: auto; text-align: center;">
+        <a href="index.html" class="btn btn-back">
+            ← Back to Home
+        </a>
+    </div>
+        <div style="max-width: 500px; margin: auto; text-align: center;">
+        <a href="launcherpe.html" class="btn btn-back">
+            ← Back to  LeviLaunchroid
+        </a>
+    </div>
+
+
+</body>
+</html>

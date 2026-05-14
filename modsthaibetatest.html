@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google" content="notranslate">
+    <title>Mods Preview</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            padding: 15px;
+            padding-top: 60px;
+            background-color: #f4f4f4;
+            margin: 0;
+        }
+
+        .lang-bar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgba(255, 255, 255, 0.9);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            z-index: 1000;
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+            gap: 10px;
+        }
+
+        .lang-btn {
+            text-decoration: none;
+            font-size: 13px;
+            font-weight: bold;
+            padding: 5px 15px;
+            border-radius: 20px;
+            border: 1px solid #ddd;
+            color: #666;
+            transition: 0.3s;
+        }
+
+        .btn-mcpedl {
+            background-color: #3b3b3b;
+            color: white;
+        }
+
+        .lang-btn.active {
+            background-color: #333;
+            color: #fff;
+            border-color: #333;
+        }
+
+        .lang-btn:hover:not(.active) {
+            background-color: #eee;
+        }
+
+        .mod-card {
+            background: white;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            max-width: 500px;
+            margin: 0 auto 30px auto;
+        }
+
+        .header-row {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        .header-row img {
+            width: 60px;
+            height: 60px;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+
+        .app-title {
+            margin: 0;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .submit-date {
+            font-size: 12px;
+            color: #666;
+            margin-top: 5px;
+        }
+
+        .video-container {
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%;
+            height: 0;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            overflow: hidden;
+            background: #000;
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        .btn-group {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-bottom: 10px;
+        }
+
+        .btn {
+            display: block;
+            text-align: center;
+            padding: 12px;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        .btn-curseforge {
+            background-color: #f16436;
+            color: white;
+        }
+
+        .btn-modrinth {
+            background-color: #1bd96a;
+            color: #000;
+        }
+
+        .btn-back {
+            background-color: #e0e0e0;
+            color: #333;
+            margin-top: 10px;
+        }
+
+        @media (max-height: 500px) {
+            .mod-card { max-width: 90%; }
+            .header-row img { width: 40px; height: 40px; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="lang-bar">
+        <a href="modsthaibetatest.html" class="lang-btn active">🇹🇭 ภาษาไทย</a>
+        <a href="mods.html" class="lang-btn">🇺🇸 English</a>
+    </div>
+
+    <!-- The Timeless Prison -->
+    <div class="mod-card">
+        <div class="header-row">
+            <img src="images/The_Timeless_Prison.png" alt="Mod Logo: The Timeless Prison" onerror="this.src='https://media.forgecdn.net/avatars/597/655/637691515282035222.png'">
+            <div>
+                <h1 class="app-title" translate="no">The Timeless Prison</h1>
+            </div>
+        </div>
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/W6l5ftwLWcw" title="YouTube video player" allowfullscreen></iframe>
+        </div>
+        <div class="btn-group">
+            <a href="https://www.curseforge.com/minecraft/mc-mods/the-timeless-prison" class="btn btn-curseforge">
+                [ ดูบน CurseForge Minecraft Java edition ]
+            </a>
+        </div>
+    </div>
+
+    <!-- Orbital Railgun Reforged -->
+    <div class="mod-card">
+        <div class="header-row">
+            <img src="images/orbital_railgun.png" alt="Mod Logo: Orbital Railgun Reforged" onerror="this.src='https://media.forgecdn.net/avatars/611/846/637955519391039328.png'">
+            <div>
+                <h1 class="app-title" translate="no">Orbital Railgun Reforged</h1>
+                <div class="submit-date">ทำลายศัตรูของคุณด้วยการโจมตีจากวงโคจร!</div>
+            </div>
+        </div>
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/T5WzES7MVHM" title="YouTube video player" allowfullscreen></iframe>
+        </div>
+        <div class="btn-group">
+            <a href="https://www.curseforge.com/minecraft/mc-mods/orbital-railgun-reforged/gallery" class="btn btn-curseforge">
+                [ ดูบน CurseForge Minecraft Java edition ]
+            </a>
+        </div>
+    </div>
+
+    <!-- Carry On -->
+    <div class="mod-card">
+        <div class="header-row">
+            <img src="images/Carry_On_Mod.png" alt="Mod Logo: Carry On" onerror="this.src='https://media.forgecdn.net/avatars/611/846/637955519391039328.png'">
+            <div>
+                <h1 class="app-title" translate="no">Carry On Mod</h1>
+                <div class="submit-date">แบกสิ่งของและสัตว์ต่าง ๆ ได้ด้วยมือเปล่า!</div>
+            </div>
+        </div>
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/IXgt3HShiS0" title="YouTube video player" allowfullscreen></iframe>
+        </div>
+        <div class="btn-group">
+            <a href="https://www.curseforge.com/minecraft/mc-mods/carry-on" class="btn btn-curseforge">
+                [ ดูบน CurseForge Minecraft Java edition ]
+            </a>
+            <a href="https://www.curseforge.com/minecraft-bedrock/addons/pickup-carry-cf" class="btn btn-curseforge">
+                [ ดูบน CurseForge Minecraft Bedrock edition ]
+            </a>
+            <a href="https://modrinth.com/mod/carry-on" class="btn btn-modrinth">
+                [ ดูบน Modrinth Minecraft Java edition ]
+            </a>
+            <a href="https://mcpedl.com/pick-up-carry-addon/" class="btn btn-mcpedl">
+                [ ดูบน MCPEDL Minecraft Bedrock edition ]
+            </a>
+        </div>
+    </div>
+
+    <!-- Evoodooers -->
+    <div class="mod-card">
+        <div class="header-row">
+            <img src="images/Evoodooers.png" alt="Mod Logo: Evoodooers" onerror="this.src='https://media.forgecdn.net/avatars/597/655/637691515282035222.png'">
+            <div>
+                <h1 class="app-title" translate="no">Evoodooers</h1>
+            </div>
+        </div>
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/iUk_Gz500Ag" title="YouTube video player" allowfullscreen></iframe>
+        </div>
+        <div class="btn-group">
+            <a href="https://www.curseforge.com/minecraft/mc-mods/evoodooers" class="btn btn-curseforge">
+                [ ดูบน CurseForge Minecraft Java edition ]
+            </a>
+        </div>
+    </div>
+
+    <!-- Baby Player -->
+    <div class="mod-card">
+        <div class="header-row">
+            <img src="images/babyplayer.png" alt="Mod Logo: Baby Player" onerror="this.src='https://media.forgecdn.net/avatars/597/655/637691515282035222.png'">
+            <div>
+                <h1 class="app-title" translate="no">Baby Player</h1>
+            </div>
+        </div>
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/0HIzwy4JsvE" title="YouTube video player" allowfullscreen></iframe>
+        </div>
+        <div class="btn-group">
+            <a href="https://www.curseforge.com/minecraft/mc-mods/baby-players" class="btn btn-curseforge">
+                [ ดูบน CurseForge Minecraft Java edition ]
+            </a>
+        </div>
+        <div class="btn-group">
+            <a href="https://www.curseforge.com/minecraft-bedrock/addons/bebe-player-addon" class="btn btn-curseforge">
+                [ ดูบน CurseForge Minecraft Bedrock edition ]
+            </a>
+            <a href="informationbabyplayerthai.html" style="text-decoration: none;">
+                <button style="background-color: #e67e22; color: white; width: 100%; padding: 12px; border: none; border-radius: 5px; margin-top: 5px; font-size: 14px; cursor: pointer;">
+                    [ ข้อมูลเพิ่มเติม เมื่อระบบตรงตามความต้องการ Minecraft Java edition ]
+                </button>
+            </a>
+        </div>
+    </div>
+
+    <div style="max-width: 500px; margin: auto; text-align: center;">
+        <a href="index.html" class="btn btn-back">
+            ← กลับหน้าหลัก
+        </a>
+    </div>
+    <div style="max-width: 500px; margin: auto; text-align: center;">
+        <a href="mods2.html" class="btn btn-back">
+            ถัดไป 2 →
+        </a>
+    </div>
+
+</body>
+</html>

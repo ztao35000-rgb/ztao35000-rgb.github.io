@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Home</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            padding: 10px;
+        }
+
+        /* แถวที่ 1 */
+        .header-row {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 10px;
+        }
+
+        .header-row img {
+            width: 80px;
+            height: auto;
+            transition: 0.3s;
+        }
+
+        .app-title {
+            margin: 0;
+            font-size: 22px;
+        }
+
+        /* ลิงก์ดาวน์โหลด */
+        .download-link {
+            display: block;
+            color: blue;
+            font-size: 16px;
+            margin-bottom: 20px; /* เพิ่มช่องว่างด้านล่าง */
+        }
+
+        /* --- ปุ่มกลับหน้าหลัก --- */
+        .back-button {
+            display: inline-block;
+            padding: 10px 15px;
+            background-color: #f0f0f0;
+            color: #333;
+            text-decoration: none;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 14px;
+        }
+        
+        .back-button:active {
+            background-color: #ddd; /* สีตอนกด */
+        }
+
+        /* ปรับขนาดหน้าจอแนวนอน */
+        @media (max-height: 500px) {
+            .header-row img { width: 45px; }
+            .app-title { font-size: 18px; }
+            .download-link { font-size: 14px; }
+            .back-button { padding: 5px 10px; font-size: 12px; }
+        }
+    </style>
+</head>
+<body>
+
+    
+    <div class="header-row">
+        <img src="images/applist2.png" alt="Logo App AII">
+        <h1 class="app-title">Minecraft Java Editing for mobile</h1>
+    </div>
+
+<a href="test.html" class="download-link">
+        [<u>Click here to all app</u>]
+    </a>
+    <div class="header-row">
+        <img src="images/mooooo.png" alt="Logo Mods AII">
+        <h1 class="app-title">Mods Java & bedrock</h1>
+    </div>
+
+<a href="modsthen.html" class="download-link">
+        [<u>Click here to all Mods</u>]
+    </a>
+        <div class="header-row">
+        <img src="images/applist.png" alt="Logo Code Color">
+        <h1 class="app-title">Code color</h1>
+    </div>
+    
+
+<a href="codecolor.html" class="download-link">
+        [<u>Click here to codecolor</u>]
+
+    </a>
+        <div class="header-row">
+        <img src="images/applist.png" alt="Logo Launcher PE">
+        <h1 class="app-title">Minecraft Launcher PE for Android & PC</h1>
+    </div>
+    
+
+<a href="launcherpe.html" class="download-link">
+        [<u>Click here to all app</u>]
+        
+    
+</body>
+
+</body>
+</html>

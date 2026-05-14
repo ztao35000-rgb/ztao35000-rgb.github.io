@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Smart HTML Editor</title>
+    <style>
+        body { font-family: sans-serif; display: flex; height: 100vh; margin: 0; background: #1e1e1e; color: white; }
+        #sidebar { width: 250px; border-right: 1px solid #333; padding: 10px; overflow-y: auto; }
+        #main { flex: 1; display: flex; flex-direction: column; padding: 10px; }
+        textarea { flex: 1; background: #252526; color: #d4d4d4; border: none; padding: 15px; font-family: monospace; font-size: 16px; outline: none; }
+        button { background: #007acc; color: white; border: none; padding: 10px; cursor: pointer; margin-bottom: 10px; }
+        .file-item { padding: 8px; cursor: pointer; border-bottom: 1px solid #333; }
+        .file-item:hover { background: #333; }
+    </style>
+</head>
+<body>
+    <div id="sidebar">
+        <h3>Files</h3>
+        <div id="fileList"></div>
+    </div>
+    <div id="main">
+        <h4 id="currentFile">Select a file</h4>
+        <button onclick="saveFile()">💾 SAVE CHANGES</button>
+        <textarea id="codeEditor" spellcheck="false"></textarea>
+    </div>
+
+    <script>
+        let openedFile = "";
+
+        // โหลดรายชื่อไฟล์เมื่อเปิดหน้าเว็บ
+        async function loadFileList() {
+            const res = await fetch('/api/files');
+            const files = await res.json();
+            document.getElementById('fileList').innerHTML = files.map(f => 
+                `<div class="file-item" onclick="openFile('${f}')">${f}</div>`
+            ).join('');
+        }
+
+        // เปิดไฟล์มาแก้ไข
+        async function openFile(name) {
+            openedFile = name;
+            document.getElementById('currentFile').innerText = "Editing: " + name;
+            const res = await fetch('/api/read/' + name);
+            document.getElementById('codeEditor').value = await res.text();
+        }
+
+        // ส่งข้อมูลกลับไปบันทึก
+        async function saveFile() {
+            if (!openedFile) return alert("Select a file first!");
+            const content = document.getElementById('codeEditor').value;
+            const res = await fetch('/api/save', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ filename: openedFile, content })
+            });
+            const result = await res.json();
+            alert(result.status);
+        }
+
+        loadFileList();
+    </script>
+</body>
+</html>
